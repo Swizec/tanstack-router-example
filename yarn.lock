@@ -1313,10 +1313,27 @@
   resolved "https://registry.yarnpkg.com/@swc/types/-/types-0.1.5.tgz#043b731d4f56a79b4897a3de1af35e75d56bc63a"
   integrity sha512-myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==
 
-"@tanstack/history@0.0.1-beta.221":
-  version "0.0.1-beta.221"
-  resolved "https://registry.yarnpkg.com/@tanstack/history/-/history-0.0.1-beta.221.tgz#cf77f205b875a666343ce2ba8f4a63553927e3ba"
-  integrity sha512-bw2GfQFXgOJ3hjAazHX/FKUA/To5BXuZk/QmykEfnin3GefefOUJnn7Huyy++/kP1iOquvvD1Cf0YGzEwYW2ug==
+"@tanstack/history@0.0.1-beta.205":
+  version "0.0.1-beta.205"
+  resolved "https://registry.yarnpkg.com/@tanstack/history/-/history-0.0.1-beta.205.tgz#ed029840424b8624c9fa46109f2b9ed59412206a"
+  integrity sha512-LDM69LkrKvDvn9e3IIh7fFNXtGNwmP41fAnLISdA8c3tu7ZIzX5WV5fQ+f2sWxq2JOfurj7Dq94RPEbM831jog==
+
+"@tanstack/history@0.0.1-beta.225":
+  version "0.0.1-beta.225"
+  resolved "https://registry.yarnpkg.com/@tanstack/history/-/history-0.0.1-beta.225.tgz#085e525b45c7557a76868dc4882a72d1932686ef"
+  integrity sha512-rf8S0imJJ25xxBCYiB7pvmV6+fSHVVDHAXgT3iZOB6KqGHUlxbf/WEz3tr22PeP4Q2ucEn1HS0epUv8KgqypHw==
+
+"@tanstack/query-core@5.12.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.12.1.tgz#2e04b8ab7a04b2f2cfe77c2b0c9b982477373e06"
+  integrity sha512-WbZztNmKq0t6QjdNmHzezbi/uifYo9j6e2GLJkodsYaYUlzMbAp91RDyeHkIZrm7EfO4wa6Sm5sxJZm5SPlh6w==
+
+"@tanstack/react-query@^5.12.2":
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.12.2.tgz#42b39a1ccc2bdf44137921c2395902ed4239d7eb"
+  integrity sha512-BeWZu8zVFH20oRc+S/K9ADPgWjEzP/XQCGBNz5IbApUwPQAdwkQYbXODVL5AyAlWiSxhx+P2xlARPBApj2Yrog==
+  dependencies:
+    "@tanstack/query-core" "5.12.1"
 
 "@tanstack/react-router@0.0.1-beta.150":
   version "0.0.1-beta.150"
@@ -1330,13 +1347,25 @@
     tiny-invariant "^1.3.1"
     tiny-warning "^1.0.3"
 
-"@tanstack/react-router@0.0.1-beta.221":
-  version "0.0.1-beta.221"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-router/-/react-router-0.0.1-beta.221.tgz#44090f0583eb6c9e11ffeed6c62e79338ba1c126"
-  integrity sha512-Kn6gYJ7/8yGlOoECnj3h9me5fdfQifnCam0fl/Pb4csS+t9w88+dgFJqwCJOgew95qT18q747LCfSt3ktKZ9ZQ==
+"@tanstack/react-router@0.0.1-beta.205":
+  version "0.0.1-beta.205"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-router/-/react-router-0.0.1-beta.205.tgz#c30a8bcb73bb48d4feeda8cebd56717e8864a446"
+  integrity sha512-4j7sn5rGXAZ0Sa5p22t462jTBk48wEEfrUIGVT8sctJaqMxR63uRG457XJJEBIFWArvwsbJQRe/KE3RFr7GvZw==
   dependencies:
     "@babel/runtime" "^7.16.7"
-    "@tanstack/history" "0.0.1-beta.221"
+    "@gisatcz/cross-package-react-context" "^0.2.0"
+    "@tanstack/history" "0.0.1-beta.205"
+    "@tanstack/react-router" "^0.0.1-beta.203"
+    tiny-invariant "^1.3.1"
+    tiny-warning "^1.0.3"
+
+"@tanstack/react-router@^0.0.1-beta.203":
+  version "0.0.1-beta.225"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-router/-/react-router-0.0.1-beta.225.tgz#3b6a207bac341cbf3642ca648af86fd08f64f4da"
+  integrity sha512-cpjb1GtOetSaQji7XZpWM5W7nbhA5achMycS3lhx5YZcEuKvTTEj1TeEwGwKp+MsxLN3zCMzYIVY3rbSUr4aMg==
+  dependencies:
+    "@babel/runtime" "^7.16.7"
+    "@tanstack/history" "0.0.1-beta.225"
     tiny-invariant "^1.3.1"
     tiny-warning "^1.0.3"
 
@@ -1348,10 +1377,10 @@
     "@tanstack/store" "0.0.1-beta.150"
     use-sync-external-store "^1.2.0"
 
-"@tanstack/router-cli@0.0.1-beta.221":
-  version "0.0.1-beta.221"
-  resolved "https://registry.yarnpkg.com/@tanstack/router-cli/-/router-cli-0.0.1-beta.221.tgz#1b8e7b1d0298aba14045b01aacd4737437e130f5"
-  integrity sha512-PQVAoAi4+vqYr8RTWpV+MFLk+FVWVsfOPUkXADAZ3aUoLmrVlTxoMsEBOBuKdWjXG1gz87MqwdmklhPbXP5hhQ==
+"@tanstack/router-cli@0.0.1-beta.205":
+  version "0.0.1-beta.205"
+  resolved "https://registry.yarnpkg.com/@tanstack/router-cli/-/router-cli-0.0.1-beta.205.tgz#21bc112c417c559b395a15f066be1ff40e48d384"
+  integrity sha512-z1yNh/E6zUjVXJ4kWEFRk7FMbsoQvgD+ZhGP2oIUuVv+gKKz1MPSbsFZ08sFaZ+k9GWCfFP9NO2K6XxCAq0tFg==
   dependencies:
     "@babel/core" "^7.20.2"
     "@babel/plugin-syntax-jsx" "^7.18.6"
