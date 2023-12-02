@@ -14,7 +14,7 @@ export const route = new FileRoute("/").createRoute({
         </div>
     ),
     pendingComponent: () => <p>Loading ...</p>,
-    load: async () => {
+    loader: async () => {
         await wait(1.5);
         return {};
     },

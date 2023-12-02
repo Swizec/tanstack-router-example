@@ -19,7 +19,7 @@ export const route = new FileRoute("/story/$id").createRoute({
         );
     },
     pendingComponent: () => <p>Loading ...</p>,
-    load: async () => {
+    loader: async () => {
         await wait(3);
         return {};
     },
