@@ -1,21 +1,8 @@
-import { FileRoute, Link, Outlet } from "@tanstack/react-router";
-import { wait } from "../wait";
+import { FileRoute, redirect } from "@tanstack/react-router";
 
-export const route = new FileRoute("/").createRoute({
-    component: () => (
-        <div style={{ background: "#173f5f", padding: "1em", color: "white" }}>
-            <p>I'm the index body</p>
-
-            <Outlet />
-
-            <Link to="/story/1">Open story 1</Link>
-            <br />
-            <Link to="/story/2">Open story 2</Link>
-        </div>
-    ),
-    pendingComponent: () => <p>Loading ...</p>,
-    load: async () => {
-        await wait(1.5);
-        return {};
-    },
+// File-based nested routes require matching parent/child names
+// This tiny example has nowt to show on index, so we redirect
+export const Route = new FileRoute("/").createRoute({
+  component: () => <p>redirecting</p>,
+  loader: () => redirect({ to: "/story" }),
 });

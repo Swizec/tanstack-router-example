@@ -8,19 +8,19 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 
 const router = new Router({
-    routeTree,
-    context: { queryClient },
+  routeTree,
+  context: { queryClient },
 });
 
 // Register things for typesafety
 declare module "@tanstack/react-router" {
-    interface Register {
-        router: typeof router;
-    }
+  interface Register {
+    router: typeof router;
+  }
 }
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router} />
-    </QueryClientProvider>
+  <QueryClientProvider client={queryClient}>
+    <RouterProvider router={router} />
+  </QueryClientProvider>,
 );
